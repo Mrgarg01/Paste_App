@@ -33,7 +33,7 @@ const Home = () => {
       title: title,
       content: value,
       _id: pasteId || Date.now().toString(36),
-      createdAt: (new Date()),
+      createdAt: new Date().toISOString(),
     };
 
     if (pasteId) {
